@@ -40,8 +40,8 @@ public class TaskService implements CreateTaskUseCase, RetrieveTaskUseCase, Upda
     }
 
     @Override
-    public Optional<Task> getTask(Long id) {
-        return retrieveTaskUseCase.getTask(id);
+    public Optional<Task> getTaskById(Long id) {
+        return retrieveTaskUseCase.getTaskById(id);
     }
 
     @Override
